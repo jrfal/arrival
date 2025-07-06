@@ -1,0 +1,10 @@
+{{#> pageContainer pageTitle="Reset password" }}
+  <p>Enter your email to receive a password reset link.</p>
+  <form>
+    {{> textField key="email" label="Email" requiredMessage="Enter your email." autocomplete="email"}}
+    <div class="d-grid mt-4">
+      <button class="btn btn-primary" type="submit">Continue</button>
+    </div>
+  </form>
+  <a href="{{registrationUrl}}">Register</a> &bull; <a href="{{loginUrl}}">{{signIn}}</a>
+{{/pageContainer}}

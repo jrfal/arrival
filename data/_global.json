@@ -1,6 +1,6 @@
 {
   "loginUrl": "/",
-  "forgotPWUrl": "#forgot",
+  "forgotPWUrl": "requestPWreset.html",
   "registrationUrl": "register.html",
   "signIn": "Sign in",
   "register": "Sign up"
