@@ -1,5 +1,7 @@
 {
+  "loginUrl": "/",
   "forgotPWUrl": "#forgot",
-  "registrationUrl": "#register",
-  "signIn": "Sign in"
+  "registrationUrl": "register.html",
+  "signIn": "Sign in",
+  "register": "Sign up"
 }

@@ -1,0 +1,11 @@
+{{#> pageContainer pageTitle=register }}
+  <form>
+    {{> textField key="username" label="Username" requiredMessage="Enter your username."}}
+    {{> textField key="password" label="Password" requiredMessage="Enter your password." type="new-password"}}
+    {{> textField key="confirm-password" label="Confirm Password" requiredMessage="Confirm your password." type="new-password"}}
+    <div class="d-grid mt-4">
+      <button class="btn btn-primary" type="submit">Continue</button>
+    </div>
+  </form>
+  <a href="{{forgotPWUrl}}">Forgot Password</a> &bull; <a href="{{loginUrl}}">{{signIn}}</a>
+{{/pageContainer}}
