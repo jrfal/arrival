@@ -43,7 +43,8 @@ loopOnDir(dataDir)(file => {
     const dataPath = path.join(dataDir, `${name}.json`)
     const globalPath = path.join(dataDir, `_global.json`)
     const frameworkPath = path.join(dataDir, `_bootstrap.json`)
-    // const frameworkPath = path.join(dataDir, `_pico.json`)
+    //const frameworkPath = path.join(dataDir, `_pico.json`)
+    // const frameworkPath = path.join(dataDir, `_pure.json`)
   
     let data = {}
     if (fs.existsSync(dataPath)) {

@@ -1,0 +1,9 @@
+{
+  "buttonClasses": "pure-button pure-button-primary pure-input-1",
+  "cardClasses": "pure-u-1-2",
+  "fieldInputClasses": "pure-input-1",
+  "formClasses": "pure-form pure-form-stacked",
+  "pageClasses": "pure-g",
+  "socialButtonClasses": "pure-button pure-input-1",
+  "stylesheet": "https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+}
