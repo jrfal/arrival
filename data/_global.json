@@ -3,5 +3,6 @@
   "forgotPWUrl": "requestPWreset.html",
   "registrationUrl": "register.html",
   "signIn": "Sign in",
-  "register": "Sign up"
+  "register": "Sign up",
+  "purestylesheet": "https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
 }

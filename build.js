@@ -42,13 +42,15 @@ loopOnDir(dataDir)(file => {
   if (!name.match(/^\_/)) {
     const dataPath = path.join(dataDir, `${name}.json`)
     const globalPath = path.join(dataDir, `_global.json`)
+    const frameworkPath = path.join(dataDir, `_bootstrap.json`)
+    // const frameworkPath = path.join(dataDir, `_pico.json`)
   
     let data = {}
     if (fs.existsSync(dataPath)) {
       data = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
     }
     if (fs.existsSync(globalPath)) {
-      data = { ...data, ...JSON.parse(fs.readFileSync(globalPath, 'utf8')) }
+      data = { ...data, ...JSON.parse(fs.readFileSync(globalPath, 'utf8')), ...JSON.parse(fs.readFileSync(frameworkPath, 'utf8')) }
     }
   
     const html = templates[data.template || "login"](data)
@@ -58,11 +60,3 @@ loopOnDir(dataDir)(file => {
     fs.writeFileSync(outputPath, html)
   }
 })
-
-// const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
-// const result = template(data)
-
-// Ensure output directory exists
-// fs.mkdirSync(outputDir, { recursive: true })
-// fs.writeFileSync(path.join(outputDir, 'index.html'), result)
-

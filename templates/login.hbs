@@ -1,14 +1,15 @@
 {{#> pageContainer pageTitle=signIn }}
   {{#if badCreds}}
-  <div class="alert alert-danger" role="alert">
+  <div class="{{errorAlertClasses}}" role="alert">
     Incorrect username or password.
   </div>
   {{/if}}
-  <form>
+  <form class="{{formClasses}}">
     {{> textField key="username" label="Username" requiredMessage="Enter your username." autocomplete="username"}}
     {{> textField key="password" label="Password" requiredMessage="Enter your password." type="password" autocomplete="current-password"}}
-    <div class="d-grid mt-4">
-      <button class="btn btn-primary" type="submit">Continue</button>
+    <div class="{{buttonBoxClasses}}">
+      {{> primaryButton}}
+      {{> socialButtons}}
     </div>
   </form>
   <a href="{{forgotPWUrl}}">Forgot Password</a> &bull; <a href="{{registrationUrl}}">Register</a>

@@ -1,13 +1,12 @@
-<div class="mb-3">
-  <label for="{{key}}" class="form-label mb-1">{{label}}</label>
+<div>
+  <label for="{{key}}" class="{{fieldLabelClasses}}">{{label}}</label>
   <input 
-    class="form-control{{#if requiredMessages}}
-    is-invalid{{/if}}"
+    class="{{fieldInputClasses}} {{#if requiredMessages}}{{fieldInvalidInputClasses}}{{/if}}"
     type="{{#if type}}{{type}}{{else}}text{{/if}}"
     id="{{key}}"
     {{#if autocomplete}}autocomplete="{{autocomplete}}"{{/if}}
   />
   {{#if requiredMessages}}
-  <div class="invalid-feedback">{{requiredMessage}}</div>
+  <div class="{{fieldErrorClasses}}">{{requiredMessage}}</div>
   {{/if}}
 </div>
