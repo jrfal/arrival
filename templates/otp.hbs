@@ -1,0 +1,14 @@
+{{#> pageContainer pageTitle="Enter Passcode" }}
+  {{#if badCreds}}
+  <div class="{{errorAlertClasses}}" role="alert">
+    Incorrect passcode.
+  </div>
+  {{/if}}
+  <p>Enter the one-time passcode that was sent to you.</p>
+  <form class="{{formClasses}}">
+    {{> textField key="passcode" label="Passcode" requiredMessage="Enter your one-time passcode." autocomplete="passcode"}}
+    <div class="{{buttonBoxClasses}}">
+      {{> primaryButton}}
+    </div>
+  </form>
+{{/pageContainer}}

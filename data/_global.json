@@ -3,5 +3,27 @@
   "forgotPWUrl": "requestPWreset.html",
   "registrationUrl": "register.html",
   "signIn": "Sign in",
-  "register": "Sign up"
+  "register": "Sign up",
+  "registrationForm": [
+    {
+      "label": "First Name",
+      "key": "firstName",
+      "requiredMessage": "Enter your first name."
+    },
+    {
+      "label": "Last Name",
+      "key": "lastName",
+      "requiredMessage": "Enter your last name."
+    },
+    {
+      "label": "Email",
+      "key": "email",
+      "requiredMessage": "Enter your email."
+    },
+    {
+      "label": "Age",
+      "key": "age",
+      "requiredMessage": "Enter your age."
+    }
+  ]
 }

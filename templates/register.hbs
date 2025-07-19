@@ -1,6 +1,8 @@
 {{#> pageContainer pageTitle=register }}
   <form class="{{formClasses}}">
-    {{> textField key="username" label="Username" requiredMessage="Enter your username."}}
+    {{#each registrationForm}}
+      {{> textField key=this.key label=this.label requiredMessage=this.requiredMessage autocomplete=this.key}}
+    {{/each}}
     {{> textField key="password" label="Password" requiredMessage="Enter your password." type="new-password"}}
     {{> textField key="confirm-password" label="Confirm Password" requiredMessage="Confirm your password." type="new-password"}}
     <div class="{{buttonBoxClasses}}">

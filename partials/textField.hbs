@@ -1,12 +1,12 @@
 <div>
-  <label for="{{key}}" class="{{fieldLabelClasses}}">{{label}}</label>
+  <label for="{{key}}" class="{{@root.fieldLabelClasses}}">{{label}}</label>
   <input 
-    class="{{fieldInputClasses}} {{#if requiredMessages}}{{fieldInvalidInputClasses}}{{/if}}"
+    class="{{@root.fieldInputClasses}} {{#if requiredMessages}}{{@root.fieldInvalidInputClasses}}{{/if}}"
     type="{{#if type}}{{type}}{{else}}text{{/if}}"
     id="{{key}}"
     {{#if autocomplete}}autocomplete="{{autocomplete}}"{{/if}}
   />
   {{#if requiredMessages}}
-  <div class="{{fieldErrorClasses}}">{{requiredMessage}}</div>
+  <div class="{{@root.fieldErrorClasses}}">{{requiredMessage}}</div>
   {{/if}}
 </div>

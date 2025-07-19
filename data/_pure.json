@@ -5,5 +5,5 @@
   "formClasses": "pure-form pure-form-stacked",
   "pageClasses": "pure-g",
   "socialButtonClasses": "pure-button pure-input-1",
-  "stylesheet": "https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+  "stylesheets": ["https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"]
 }

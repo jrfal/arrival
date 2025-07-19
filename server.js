@@ -13,6 +13,7 @@ const PORT = 3000
 
 // Serve the static output
 app.use(express.static(path.join(__dirname, 'dist')))
+app.use(express.static('public'))
 
 // Watch for changes in templates, data, partials, styles
 const watcher = chokidar.watch(
