@@ -16,6 +16,9 @@
   "formClasses": "d-flex flex-column gap-3",
   "headingClasses": "mb-4",
   "pageClasses": "min-vh-100 d-flex flex-column justify-content-center py-4 align-items-center",
+  "pwRequirementClasses": "list-group-item",
+  "pwRequirementValidIcon": "check-circle-fill",
+  "pwRequirementInvalidIcon": "circle",
   "socialButtonClasses": "btn btn-light",
   "socialButtonIconClasses": " me-1",
   "stylesheets": [

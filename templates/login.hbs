@@ -9,7 +9,11 @@
     {{> textField key="password" label="Password" requiredMessage="Enter your password." type="password" autocomplete="current-password"}}
     <div class="{{buttonBoxClasses}}">
       {{> primaryButton}}
-      {{> socialButtons}}
+      {{> orDivider}}
+      <div class="{{buttonStackClasses}}">
+        {{> socialButtons}}
+        {{> passkeyButton}}
+      </div>
     </div>
   </form>
   <a href="{{forgotPWUrl}}">Forgot Password</a> &bull; <a href="{{registrationUrl}}">Register</a>

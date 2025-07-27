@@ -3,6 +3,7 @@
   "forgotPWUrl": "requestPWreset.html",
   "registrationUrl": "register.html",
   "signIn": "Sign in",
+  "pwRequirementsTitle": "Password must be",
   "register": "Sign up",
   "registrationForm": [
     {

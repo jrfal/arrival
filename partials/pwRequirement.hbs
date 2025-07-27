@@ -1,0 +1,8 @@
+<li class="{{pwRequirementClasses}}">
+  {{#if valid}}
+    <i class="bi bi-{{pwRequirementValidIcon}}{{pwRequirementIconClasses}}" aria-hidden="true"></i>
+  {{else}}
+    <i class="bi bi-{{pwRequirementInvalidIcon}}{{pwRequirementIconClasses}}" aria-hidden="true"></i>
+  {{/if}}
+  {{> @partial-block }}
+</li>

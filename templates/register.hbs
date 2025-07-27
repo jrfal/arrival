@@ -4,6 +4,13 @@
       {{> textField key=this.key label=this.label requiredMessage=this.requiredMessage autocomplete=this.key}}
     {{/each}}
     {{> textField key="password" label="Password" requiredMessage="Enter your password." type="new-password"}}
+    {{#> pwRequirements}}
+      {{#> pwRequirement }}8 characters long{{/pwRequirement}}
+      {{#> pwRequirement valid=true }}At least 1 lowercase letter{{/pwRequirement}}
+      {{#> pwRequirement }}At least 1 uppercase letter{{/pwRequirement}}
+      {{#> pwRequirement }}At least 1 number{{/pwRequirement}}
+      {{#> pwRequirement valid=true }}At least 1 special character{{/pwRequirement}}
+    {{/pwRequirements}}
     {{> textField key="confirm-password" label="Confirm Password" requiredMessage="Confirm your password." type="new-password"}}
     <div class="{{buttonBoxClasses}}">
       {{> primaryButton}}
