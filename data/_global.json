@@ -26,5 +26,12 @@
       "key": "age",
       "requiredMessage": "Enter your age."
     }
+  ],
+  "socialButtons": [
+    { "name": "Google", "icon": "google"},
+    { "name": "Facebook", "icon": "facebook"},
+    { "name": "Apple", "icon": "apple"},
+    { "name": "LinkedIn", "icon": "linkedin"},
+    { "name": "Twitch", "icon": "twitch"}
   ]
 }
