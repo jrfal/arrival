@@ -15,6 +15,9 @@
 <body class="{{bodyClasses}}">
   <div class="{{pageClasses}}">
     {{#> mainCard}}
+      {{#if logoUrl}}
+        <img src="{{logoUrl}}" class="{{logoClasses}}"/>
+      {{/if}}
       <h1 class="{{headingClasses}}">{{pageTitle}}</h1>
       {{> @partial-block }}
     {{/mainCard}}

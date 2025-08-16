@@ -16,6 +16,7 @@
   "fieldErrorClasses": "invalid-feedback",
   "formClasses": "d-flex flex-column gap-3",
   "headingClasses": "mb-4",
+  "logoClasses": "w-25",
   "pageClasses": "min-vh-100 d-flex flex-column justify-content-center py-4 align-items-center",
   "pwRequirementClasses": "list-group-item",
   "pwRequirementValidIcon": "check-circle-fill",

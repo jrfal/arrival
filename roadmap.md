@@ -4,8 +4,8 @@
 * Customizable title
 * Customizable register and forgot password links
 * Customizable social buttons
----
 * Customizable logo
+---
 * NPM module that builds a customized login page
 * Responsive -- card goes full-width at mobile
 * All content is customizable
