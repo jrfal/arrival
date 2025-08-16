@@ -11,6 +11,7 @@
   "errorAlertClasses": "alert alert-danger",
   "fieldLabelClasses": "form-label mb-1",
   "fieldInputClasses": "form-control",
+  "largeInputClasses": "form-control form-control-lg text-center",
   "fieldInvalidInputClasses": "is-invalid",
   "fieldErrorClasses": "invalid-feedback",
   "formClasses": "d-flex flex-column gap-3",
