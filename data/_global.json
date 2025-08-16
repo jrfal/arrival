@@ -1,6 +1,7 @@
 {
   "loginUrl": "/",
   "logoUrl": "/Acme-Logo-1984.png",
+  "logoAlt": "Acme",
   "forgotPWUrl": "requestPWreset.html",
   "registrationUrl": "register.html",
   "signIn": "Sign in",
