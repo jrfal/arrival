@@ -1,5 +1,5 @@
 {{#> pageContainer pageTitle=register }}
-  <form class="{{formClasses}}">
+  <form class="{{formClasses}}" action="/register2.html">
     {{#each registrationForm}}
       {{> textField key=this.key label=this.label requiredMessage=this.requiredMessage autocomplete=this.key}}
     {{/each}}

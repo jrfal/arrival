@@ -29,6 +29,20 @@
       "requiredMessage": "Enter your age."
     }
   ],
+  "registrationForm2": [
+    {
+      "label": "Date of Birth",
+      "key": "birthdate"
+    },
+    {
+      "label": "City",
+      "key": "city"
+    },
+    {
+      "label": "State",
+      "key": "state"
+    }
+  ],
   "socialButtons": [
     { "name": "Google", "icon": "google"},
     { "name": "Facebook", "icon": "facebook"},

@@ -1,0 +1,11 @@
+{{#> pageContainer pageTitle=register }}
+  <form class="{{formClasses}}">
+    {{#each registrationForm2}}
+      {{> textField key=this.key label=this.label requiredMessage=this.requiredMessage autocomplete=this.key}}
+    {{/each}}
+    <div class="{{buttonBoxClasses}}">
+      {{> primaryButton}}
+    </div>
+  </form>
+  <a href="{{forgotPWUrl}}">Forgot Password</a> &bull; <a href="{{loginUrl}}">{{signIn}}</a>
+{{/pageContainer}}
