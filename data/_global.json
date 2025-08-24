@@ -22,11 +22,6 @@
       "label": "Email",
       "key": "email",
       "requiredMessage": "Enter your email."
-    },
-    {
-      "label": "Age",
-      "key": "age",
-      "requiredMessage": "Enter your age."
     }
   ],
   "registrationForm2": [

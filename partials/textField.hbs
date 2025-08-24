@@ -9,4 +9,7 @@
   {{#if requiredMessages}}
   <div class="{{@root.fieldErrorClasses}}">{{requiredMessage}}</div>
   {{/if}}
+  {{#if @partial-block}}
+    {{> @partial-block }}
+  {{/if}}
 </div>
