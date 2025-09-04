@@ -1,12 +1,12 @@
 {{#> pageContainer pageTitle=signIn }}
   {{#if badCreds}}
   <div class="{{errorAlertClasses}}" role="alert">
-    Incorrect username or password.
+    {{loginError}}
   </div>
   {{/if}}
   <form class="{{formClasses}}">
-    {{> textField key="username" label="Username" requiredMessage="Enter your username." autocomplete="username"}}
-    {{> textField key="password" label="Password" requiredMessage="Enter your password." type="password" autocomplete="current-password"}}
+    {{> textField key="username" label=labelUsername requiredMessage=requiredUsername autocomplete="username"}}
+    {{> textField key="password" label=labelPassword requiredMessage=requiredPassword type="password" autocomplete="current-password"}}
     <div class="{{buttonBoxClasses}}">
       {{> primaryButton}}
       {{> orDivider}}

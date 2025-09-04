@@ -7,9 +7,9 @@
 * Customizable logo
 * Responsive -- card goes full-width at mobile
 * 100% accessibility rating
+* All content is customizable
 ---
 * NPM module that builds a customized login page
-* All content is customizable
 
 # 1.0
 * Register template

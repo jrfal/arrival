@@ -1,6 +1,7 @@
 {
   "loginUrl": "/",
   "logoUrl": "/Acme-Logo-1984.png",
+  "loginError": "Incorrect username or password.",
   "logoAlt": "Acme",
   "forgotPWUrl": "requestPWreset.html",
   "registrationUrl": "register.html",
@@ -27,7 +28,8 @@
   "registrationForm2": [
     {
       "label": "Date of Birth",
-      "key": "birthdate"
+      "key": "birthdate",
+      "type": "date"
     },
     {
       "label": "City",
@@ -44,5 +46,9 @@
     { "name": "Apple", "icon": "apple"},
     { "name": "LinkedIn", "icon": "linkedin"},
     { "name": "Twitch", "icon": "twitch"}
-  ]
+  ],
+  "labelUsername": "Username",
+  "labelPassword": "Password",
+  "requiredUsername": "Enter your username.",
+  "requiredPassword": "Enter your password."
 }
